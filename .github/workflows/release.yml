@@ -34,13 +34,13 @@ jobs:
             asset_name: ditrive-linux-aarch64
             cross: true
 
-          # macOS
+          # macOS - use macos-13 (Intel) for x86_64, macos-14 (ARM) for aarch64
           - target: x86_64-apple-darwin
-            os: macos-latest
+            os: macos-13
             artifact_name: ditrive
             asset_name: ditrive-macos-x86_64
           - target: aarch64-apple-darwin
-            os: macos-latest
+            os: macos-14
             artifact_name: ditrive
             asset_name: ditrive-macos-aarch64
 
